@@ -6,12 +6,17 @@ public class Main {
     static final String UNIX_FILENAME = "/unix/folder/hello.so";
 
     public static void main( String[] args ) {
-        main_parse_filename(WINDOWS_FILENAME);
-    }
+        FileNameFactory factory = new FileNameFactory();
 
-    public static void main_parse_filename( String path ) {
-        int index = path.lastIndexOf("\\");
-        String r = path.substring(index + 1);
-        System.out.println(r);
+        // Windows
+        factory.createParsers("windows");
+        System.out.println(factory._FileParser.parse(WINDOWS_FILENAME));
+        System.out.println(factory._FolderCount.count(WINDOWS_FILENAME));
+
+        // Unix
+        factory.createParsers("unix");
+        System.out.println(factory._FileParser.parse(UNIX_FILENAME));
+        System.out.println(factory._FolderCount.count(UNIX_FILENAME));
+   
     }
 }
