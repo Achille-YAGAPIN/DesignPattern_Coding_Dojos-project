@@ -6,17 +6,22 @@ public class Main {
     static final String UNIX_FILENAME = "/unix/folder/hello.so";
 
     public static void main( String[] args ) {
-        FileNameFactory factory = new FileNameFactory();
-
+        
         // Windows
-        factory.createParsers("windows");
-        System.out.println(factory._FileParser.parse(WINDOWS_FILENAME));
-        System.out.println(factory._FolderCount.count(WINDOWS_FILENAME));
+        Factory windowsFactory = FactoryProducer.getFactory("windows");
+        FileNameParser windowsParser = windowsFactory.createFileNameParser();
+        FolderCounter windowsCounter = windowsFactory.createFolderCounter();
+
+        System.out.println(windowsParser.parse(WINDOWS_FILENAME));
+        System.out.println(windowsCounter.count(WINDOWS_FILENAME));
 
         // Unix
-        factory.createParsers("unix");
-        System.out.println(factory._FileParser.parse(UNIX_FILENAME));
-        System.out.println(factory._FolderCount.count(UNIX_FILENAME));
+        Factory unixFactory = FactoryProducer.getFactory("unix");
+        FileNameParser unixParser = unixFactory.createFileNameParser();
+        FolderCounter unixCounter = unixFactory.createFolderCounter();
+
+        System.out.println(unixParser.parse(UNIX_FILENAME));
+        System.out.println(unixCounter.count(UNIX_FILENAME));
    
     }
 }
