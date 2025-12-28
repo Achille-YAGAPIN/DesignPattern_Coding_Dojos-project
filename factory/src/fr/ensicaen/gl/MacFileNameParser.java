@@ -1,5 +1,5 @@
 package fr.ensicaen.gl;
-public class UnixFileNameParser implements FileNameParser{
+public class MacFileNameParser implements FileNameParser{
 
     @Override
     public String parse( String path ) {

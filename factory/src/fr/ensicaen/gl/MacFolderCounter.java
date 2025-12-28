@@ -1,5 +1,5 @@
 package fr.ensicaen.gl;
-public class UnixFolderCounter implements FolderCounter {
+public class MacFolderCounter implements FolderCounter {
     
     @Override
     public int count(String path){
