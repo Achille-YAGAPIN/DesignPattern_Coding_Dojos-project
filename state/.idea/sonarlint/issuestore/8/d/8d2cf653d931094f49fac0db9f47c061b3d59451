@@ -1,0 +1,15 @@
+
+
+java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¥¬†û8ÏŞúÕ›1
+£
+java:S1186-"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íË¸ûÿÿÿÿ8ÏŞúÕ›1
+q
+java:S1450"URemove the "_carte" field and declare it as a local variable in the relevant methods.(ÌğÒy8ë‰¹Õ›1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(êÌœ8í‰¹Õ›1
+`
+java:S1854"">Remove this useless assignment to local variable "motDePasse".(µÜ¬ºûÿÿÿÿ8ÒŞúÕ›1
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(ÈŠ²8ÔŞúÕ›1
+Q
+java:S1481""/Remove this unused "motDePasse" local variable.(µÜ¬ºûÿÿÿÿ8ÔŞúÕ›1
+F
+java:S1068"*Remove this unused "_carte" private field.(ÌğÒy8î‰¹Õ›1
